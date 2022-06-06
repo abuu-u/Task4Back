@@ -1,13 +1,13 @@
+using Microsoft.AspNetCore.Mvc;
 using Task4Back.Authorization;
 using Task4Back.Models.Users;
 using Task4Back.Services;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Task4Back.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("[controller]")]
+    [Route("task4/[controller]")]
     public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
